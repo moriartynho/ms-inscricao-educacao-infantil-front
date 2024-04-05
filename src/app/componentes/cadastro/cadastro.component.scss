@@ -1,0 +1,55 @@
+$cor-principal: #3486eb;
+
+.formulario_container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px $cor-principal;
+  max-width: 55vw;
+  padding: 30px;
+  transform: translate(25%, 0%);
+  margin-top: 20px;
+}
+.formulario_cadastro {
+  width: 60vw;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  label {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 5px;
+    width: 80%;
+
+    input {
+      height: 1.5em;
+    }
+  }
+
+  button {
+    background-color: $cor-principal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 10px;
+    width: 150px;
+    height: 10%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

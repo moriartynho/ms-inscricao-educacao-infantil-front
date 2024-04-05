@@ -1,0 +1,22 @@
+$cor-principal: #3486eb;
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.card {
+  border: $cor-principal 3px solid;
+  height: 150px;
+  width: 400px;
+  padding: 5px;
+  text-align: center;
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,48 @@
+<div class="formulario_container">
+  <div class="formulario_cadastro">
+    <h1>Cadastro - Aluno</h1>
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      <div class="form-item">
+        <label>Nome completo</label>
+        <input *ngIf=form.addValidators formControlName="studentsFullName" type="text" />
+      </div>
+      <div class="form-item">
+        <label>Data de nascimento</label>
+        <input formControlName="studentsBirthDate" type="date"/>
+      </div>
+      <div class="form-item">
+        <label>CPF</label>
+        <input formControlName="studentsCpf" type="text" />
+      </div>
+      <div class="form-item">
+        <label>Gênero</label>
+        <select formControlName="studentsGender">
+          <option value="-">-</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Feminino">Feminino</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label>Nome do responsável</label>
+        <input formControlName="studentsGuardianName" type="text" />
+      </div>
+      <div class="form-item">
+        <label>CPF do responsável</label>
+        <input formControlName="studentsGuardianCPF" type="text" />
+      </div>
+      <div class="form-item">
+        <label>Endereço</label>
+        <input formControlName="studentsAndress" type="text" />
+      </div>
+      <div class="form-item">
+        <label>Participa do Auxílio Brasil</label>
+        <select formControlName="participatesAuxilioBrasil">
+          <option value="-">-</option>
+          <option value="true">Sim</option>
+          <option value="false">Não</option>
+        </select>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+</div>

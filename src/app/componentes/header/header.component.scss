@@ -1,0 +1,28 @@
+$cor-principal: #3486eb;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    border-bottom: $cor-principal solid 1px;
+    padding: 5px;
+    a {
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding: 5px;
+    }
+    li {
+      cursor: pointer;
+
+      :hover {
+        background-color: #3486eb;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

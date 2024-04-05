@@ -1,0 +1,9 @@
+<header>
+  <nav>
+    <ul>
+      <li *ngFor="let opcao of opcoesHeader">
+        <a (click)="headerGoTo(opcao.opcaoId)"> {{ opcao.opcaoTitulo }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>

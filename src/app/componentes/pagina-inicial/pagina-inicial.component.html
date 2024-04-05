@@ -1,0 +1,20 @@
+<div class="home__container">
+  <label for="cpfParaConsulta">Insira o CPF para consulta</label>
+  <input
+    id="cpfInput"
+    name="cpfParaConsulta"
+    type="text"
+    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+    placeholder="Digite seu CPF"
+  />
+  <button (click)="consultaPorCpf(); modal.toggle()">Consultar</button>
+  <small
+    >Ainda não realizou a inscrição?
+    <a [routerLink]="['/cadastro']" routerLinkActive="router-link-active"
+      >Clique aqui</a
+    ></small
+  >
+  <app-modal-resultado-consulta #modal>
+    <div [innerHTML]="resultadoAluno" class="modal"></div>
+  </app-modal-resultado-consulta>
+</div>
