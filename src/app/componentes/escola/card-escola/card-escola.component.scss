@@ -16,7 +16,12 @@ $cor-principal: #3486eb;
   padding: 5px;
   text-align: center;
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 500;
   }
+}
+
+a:hover{
+  color: $cor-principal;
+  cursor: pointer;
 }

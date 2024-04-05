@@ -4,9 +4,9 @@ import { AppComponent } from './app.component';
 import { CommonModule, DatePipe } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [],
   imports: [BrowserModule, CommonModule],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [],
 })
 export class AppModule {}

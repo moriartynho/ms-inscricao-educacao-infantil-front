@@ -10,16 +10,16 @@ export const routes: Routes = [
     component: PaginaInicialComponent,
   },
   {
+    path: '',
+    redirectTo: '/pagina-inicial',
+    pathMatch: 'full',
+  },
+  {
     path: 'cadastro',
     component: CadastroComponent,
   },
   {
     path: 'escolas',
     component: EscolaComponent,
-  },
-  {
-    path: '',
-    redirectTo: '/pagina-inicial',
-    pathMatch: 'full',
   },
 ];

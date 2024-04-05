@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AlunoService } from '../../services/aluno/aluno.service';
 import { Aluno } from '../../types/aluno';
-import { map } from 'rxjs';
 import { ModalResultadoConsultaComponent } from '../modal-resultado-consulta/modal-resultado-consulta.component';
 
 @Component({

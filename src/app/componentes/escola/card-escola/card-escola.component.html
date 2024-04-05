@@ -2,5 +2,6 @@
   <div class="card">
     <h2>{{ escola.schoolName }}</h2>
     <h2>{{ escola.schoolAddress }}</h2>
+    <a *ngIf="isUserAdmin" (click)="teste(escola)">Detalhes</a>
   </div>
 </div>
